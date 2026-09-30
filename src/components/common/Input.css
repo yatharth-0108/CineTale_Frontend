@@ -1,0 +1,11 @@
+.field{display:flex;flex-direction:column;gap:.35rem}
+.field label{font-size:.85rem;font-weight:500}
+.field__wrap{position:relative}
+.field input{width:100%;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:#fff;font:inherit;transition:border-color .2s,box-shadow .2s}
+.field input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(31,93,67,.15)}
+.has-error input{border-color:#b3261e}
+.field__eye{position:absolute;right:.5rem;top:50%;transform:translateY(-50%);background:none;border:0;padding:.4rem;cursor:pointer;color:var(--muted)}
+.field__error{color:#b3261e;font-size:.8rem;margin:0}.field__hint{color:var(--muted);font-size:.8rem;margin:0}
+.strength{display:flex;align-items:center;gap:.6rem;font-size:.75rem;color:var(--muted)}
+.strength__bars{display:flex;gap:4px;flex:1}.strength__bars i{height:4px;flex:1;border-radius:4px;background:var(--border)}
+.strength__bars i.on.s1{background:#c0392b}.strength__bars i.on.s2{background:#d4a017}.strength__bars i.on.s3,.strength__bars i.on.s4{background:var(--green)}

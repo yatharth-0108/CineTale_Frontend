@@ -1,0 +1,7 @@
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:1px solid transparent;border-radius:999px;font:500 .95rem var(--font-sans);cursor:pointer;text-decoration:none;transition:transform .2s var(--ease),background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.btn--md{padding:.75rem 1.4rem}.btn--sm{padding:.5rem 1rem;font-size:.875rem}.btn--lg{padding:.95rem 1.8rem;font-size:1rem}
+.btn--primary{background:var(--green);color:#fff}.btn--primary:hover{background:var(--green-dark);box-shadow:var(--shadow-md)}
+.btn--secondary{background:#fff;color:var(--ink);border-color:var(--border)}.btn--secondary:hover{border-color:var(--ink)}
+.btn--ghost{background:transparent;color:var(--ink)}.btn--ghost:hover{background:rgba(0,0,0,.05)}

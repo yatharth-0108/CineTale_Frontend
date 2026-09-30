@@ -1,0 +1,148 @@
+@import "./tokens.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem/1.6 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0;
+}
+h1 em,
+h2 em {
+  font-style: italic;
+  color: var(--green);
+}
+.container {
+  width: min(1200px, 100% - 3rem);
+  margin-inline: auto;
+}
+:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================
+   CineTale — Mobile Home Page Fixes
+   ========================================= */
+
+.home-main {
+  min-width: 0;
+  width: 100%;
+}
+
+.pagehead {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.pagehead h1 {
+  max-width: 100%;
+  font-size: clamp(1.65rem, 5vw, 2.5rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.feature-banner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.feature-banner__img {
+  max-width: 100%;
+}
+
+.feature-banner__body {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.feature-banner__body h2 {
+  max-width: 100%;
+  font-size: clamp(1.7rem, 6vw, 2.5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.feature-banner__body p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .cols {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-main,
+  .pagehead,
+  .feature-banner {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .feature-banner {
+    min-height: 250px;
+    border-radius: 22px;
+  }
+
+  .feature-banner__body {
+    padding: 1.25rem;
+  }
+
+  .feature-banner__body h2 {
+    margin-block: 0.25rem 0.5rem;
+  }
+
+  .feature-banner__body p {
+    line-height: 1.5;
+  }
+
+  .sidecol {
+    min-width: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .cols {
+    padding-bottom: 90px;
+  }
+}

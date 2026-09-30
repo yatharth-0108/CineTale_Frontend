@@ -1,0 +1,20 @@
+.ob{min-height:100vh;background:var(--bg);padding:1.5rem}
+.ob__bar{height:6px;background:var(--border);border-radius:6px;max-width:760px;margin:0 auto 1.5rem;overflow:hidden}
+.ob__bar i{display:block;height:100%;background:var(--green);transition:width .35s var(--ease)}
+.ob__card{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-sm);animation:rise .4s var(--ease)}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+.ob__step{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 .75rem}
+.ob__card h1{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.5rem}.ob__card>p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.25rem 0}
+.chip{border:1px solid var(--border);background:#fff;border-radius:999px;padding:.55rem 1.1rem;font:inherit;cursor:pointer;transition:all .2s var(--ease)}
+.chip:hover{border-color:var(--green)}.chip.is-on{background:var(--green);color:#fff;border-color:var(--green)}
+.ob-movies{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin:1.25rem 0}
+.ob-movie{position:relative;border:3px solid transparent;border-radius:calc(var(--radius-md) + 3px);padding:0;background:none;cursor:pointer;transition:transform .2s var(--ease)}
+.ob-movie:hover{transform:translateY(-3px)}.ob-movie.is-on{border-color:var(--green)}
+.ob-movie__badge{position:absolute;right:8px;top:8px;background:#fff;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;box-shadow:var(--shadow-sm)}
+.ob-movie.is-on .ob-movie__badge{background:var(--green);color:#fff}
+.ob-people{list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.ob-people li{display:flex;justify-content:space-between;align-items:center;padding:.8rem 1rem;border:1px solid var(--border);border-radius:var(--radius-sm)}
+.ob-people span{color:var(--muted);font-size:.9rem}.ob-people strong{color:var(--ink)}
+.ob__nav{display:flex;justify-content:space-between;margin-top:2rem}.ob__nav span{display:flex;gap:.5rem}
+@media(max-width:600px){.ob__card{padding:1.5rem}.ob-movies{grid-template-columns:repeat(2,1fr)}}

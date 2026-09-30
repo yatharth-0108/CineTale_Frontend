@@ -1,0 +1,4 @@
+.poster{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)}
+.poster--fallback{display:flex;flex-direction:column;justify-content:space-between;padding:1rem;color:var(--ink);border:1px solid rgba(0,0,0,.06)}
+.poster__title{font:600 1.05rem/1.15 var(--font-serif)}
+.poster__year{font:500 .75rem var(--font-sans);opacity:.6;letter-spacing:.08em}
