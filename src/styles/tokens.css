@@ -1,9 +1,56 @@
-:root{
-  --bg:#faf6ee;--card:#fff;--ink:#141412;--muted:#6b6a63;--border:#e4dfd3;
-  --green:#1f5d43;--green-dark:#164632;--sage:#a9bfae;--sage-soft:#dfe9dd;
-  --lavender:#e6e0f0;--mint:#d9efe6;--peach:#f8e3d3;--yellow:#f6efc9;
-  --font-sans:'Inter',system-ui,sans-serif;--font-serif:'Fraunces',Georgia,serif;
-  --radius-sm:10px;--radius-md:16px;--radius-lg:28px;
-  --shadow-sm:0 1px 3px rgba(20,20,18,.08);--shadow-md:0 8px 24px rgba(20,20,18,.10);
-  --ease:cubic-bezier(.22,.61,.36,1);
+:root {
+  /* Light Mode — existing CineTale colors */
+  color-scheme: light;
+
+  --bg: #faf6ee;
+  --card: #fff;
+  --ink: #141412;
+  --muted: #6b6a63;
+  --border: #e4dfd3;
+
+  --green: #1f5d43;
+  --green-dark: #164632;
+  --sage: #a9bfae;
+  --sage-soft: #dfe9dd;
+
+  --lavender: #e6e0f0;
+  --mint: #d9efe6;
+  --peach: #f8e3d3;
+  --yellow: #f6efc9;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --shadow-sm: 0 1px 3px rgba(20, 20, 18, 0.08);
+  --shadow-md: 0 8px 24px rgba(20, 20, 18, 0.1);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Dark Mode */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #171a19;
+  --card: #222624;
+  --ink: #f4f0e8;
+  --muted: #b4b8b0;
+  --border: #3a403b;
+
+  --green: #a9c9ad;
+  --green-dark: #c0d9c2;
+  --sage: #536b59;
+  --sage-soft: #303e33;
+
+  --lavender: #35313f;
+  --mint: #263b32;
+  --peach: #44352d;
+  --yellow: #403d2a;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
 }

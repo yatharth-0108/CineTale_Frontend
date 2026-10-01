@@ -146,3 +146,241 @@ h2 em {
     padding-bottom: 90px;
   }
 }
+
+/* ===== CineTale Dark Mode Fix ===== */
+
+/* Right-side cards and other content cards */
+:root[data-theme="dark"] .page [class*="card"],
+:root[data-theme="dark"] .page [class*="panel"],
+:root[data-theme="dark"] .page [class*="dna"],
+:root[data-theme="dark"] .page [class*="trending"] {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+/* Text inside cards */
+:root[data-theme="dark"] .page [class*="card"] h1,
+:root[data-theme="dark"] .page [class*="card"] h2,
+:root[data-theme="dark"] .page [class*="card"] h3,
+:root[data-theme="dark"] .page [class*="card"] p,
+:root[data-theme="dark"] .page [class*="card"] span,
+:root[data-theme="dark"] .page [class*="panel"] h2,
+:root[data-theme="dark"] .page [class*="panel"] p {
+  color: var(--ink);
+}
+
+/* Search fields */
+:root[data-theme="dark"] .page input,
+:root[data-theme="dark"] .page textarea,
+:root[data-theme="dark"] .page select {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .page input::placeholder,
+:root[data-theme="dark"] .page textarea::placeholder {
+  color: var(--muted);
+}
+
+/* Round navigation buttons */
+:root[data-theme="dark"] .page button {
+  border-color: var(--border);
+}
+
+/* Keep hero movie artwork unchanged */
+:root[data-theme="dark"] .page img {
+  color: inherit;
+}
+
+/* ===== Dark mode: Home page controls ===== */
+
+/* Search bar and its outer wrapper */
+:root[data-theme="dark"] .page [class*="search"] {
+  background-color: var(--card);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+/* Search input */
+:root[data-theme="dark"] .page input {
+  background-color: transparent;
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .page input::placeholder {
+  color: var(--muted);
+}
+
+/* View details and other action buttons */
+:root[data-theme="dark"] .page button {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+/* Round carousel / horizontal scroll controls */
+:root[data-theme="dark"] .page [class*="arrow"],
+:root[data-theme="dark"] .page [class*="scroll"] button,
+:root[data-theme="dark"] .page [class*="carousel"] button,
+:root[data-theme="dark"] .page [class*="slider"] button {
+  background-color: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+/* Button hover */
+:root[data-theme="dark"] .page button:hover {
+  background-color: var(--sage-soft);
+  color: var(--ink);
+}
+
+/* ===== Dark mode: Movie detail page controls ===== */
+
+/* White pill buttons: Comedy, Drama, Trailer, View details */
+:root[data-theme="dark"] .page button,
+:root[data-theme="dark"] .page a[class*="button"],
+:root[data-theme="dark"] .page a[class*="btn"] {
+  background-color: #222624 !important;
+  color: #f4f0e8 !important;
+  border-color: #3a403b !important;
+}
+
+/* Genre tags, chips and badges */
+:root[data-theme="dark"] .page [class*="genre"],
+:root[data-theme="dark"] .page [class*="chip"],
+:root[data-theme="dark"] .page [class*="badge"],
+:root[data-theme="dark"] .page [class*="tag"] {
+  background-color: #222624 !important;
+  color: #f4f0e8 !important;
+  border-color: #3a403b !important;
+}
+
+/* Star rating controls */
+:root[data-theme="dark"] .page [class*="rating"] button,
+:root[data-theme="dark"] .page [class*="star"] button {
+  background-color: #222624 !important;
+  color: #f4f0e8 !important;
+  border-color: #3a403b !important;
+}
+
+/* Keep the green review action */
+:root[data-theme="dark"] .page button[class*="review"],
+:root[data-theme="dark"] .page a[class*="review"] {
+  background-color: #a9c9ad !important;
+  color: #171a19 !important;
+  border-color: #a9c9ad !important;
+}
+
+/* Search field */
+:root[data-theme="dark"] .page input {
+  background-color: #222624 !important;
+  color: #f4f0e8 !important;
+  border-color: #3a403b !important;
+}
+
+:root[data-theme="dark"] .page input::placeholder {
+  color: #b4b8b0 !important;
+}
+/* ===== DARK MODE: Community posts ===== */
+:root[data-theme="dark"] .post-card,
+:root[data-theme="dark"] .community-post,
+:root[data-theme="dark"] .feed-card,
+:root[data-theme="dark"] .post {
+  background: var(--card) !important;
+  color: var(--ink) !important;
+  border-color: var(--border) !important;
+}
+
+/* Community post text */
+:root[data-theme="dark"] .post-card p,
+:root[data-theme="dark"] .community-post p,
+:root[data-theme="dark"] .feed-card p,
+:root[data-theme="dark"] .post p {
+  color: var(--ink);
+}
+
+/* ===== DARK MODE: Search empty state ===== */
+:root[data-theme="dark"] .empty-state,
+:root[data-theme="dark"] .search-empty,
+:root[data-theme="dark"] .search-empty-state,
+:root[data-theme="dark"] .empty-state-card {
+  background: var(--card) !important;
+  color: var(--ink) !important;
+  border-color: var(--border) !important;
+}
+
+/* Search empty-state headings and descriptions */
+:root[data-theme="dark"] .empty-state h2,
+:root[data-theme="dark"] .empty-state h3,
+:root[data-theme="dark"] .empty-state p,
+:root[data-theme="dark"] .search-empty h2,
+:root[data-theme="dark"] .search-empty p {
+  color: var(--ink) !important;
+}
+
+/* ===== Dark mode form controls ===== */
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] select {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: var(--muted);
+}
+/* =========================================
+   CINETALE — DARK MODE EMPTY STATE FIX
+   ========================================= */
+
+:root[data-theme="dark"] .empty-state,
+:root[data-theme="dark"] .empty-state-card,
+:root[data-theme="dark"] .empty-card,
+:root[data-theme="dark"] .empty,
+:root[data-theme="dark"] [class*="empty"] {
+  background: var(--card) !important;
+  color: var(--ink) !important;
+  border-color: var(--border) !important;
+  box-shadow: none;
+}
+
+/* Empty-state headings and descriptions */
+:root[data-theme="dark"] [class*="empty"] h1,
+:root[data-theme="dark"] [class*="empty"] h2,
+:root[data-theme="dark"] [class*="empty"] h3,
+:root[data-theme="dark"] [class*="empty"] p,
+:root[data-theme="dark"] [class*="empty"] span {
+  color: var(--ink) !important;
+}
+
+/* Watchlist, profile and review panels */
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .panel {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+/* Search inputs */
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea {
+  background-color: var(--card) !important;
+  color: var(--ink) !important;
+  border-color: var(--border) !important;
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: var(--muted) !important;
+}
+
+/* Keep dark-mode buttons readable */
+:root[data-theme="dark"] button {
+  color: var(--ink);
+  border-color: var(--border);
+}
